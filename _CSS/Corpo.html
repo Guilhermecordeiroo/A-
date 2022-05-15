@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RestMat Cal</title>
+    <style>
+        body{
+            background-color: rgba(236, 221, 179, 0.096);
+        }
+        h1{
+            font-family: Arial;
+            font-size: 25pt;
+            text-align: center;
+        }
+        input {/* Parte de Colocar o comprimento*/
+            width: 40px;
+            border: none;
+            border-bottom: 1px solid #ccc;
+            text-align: left;
+                }
+        .menu li a{color:#333; text-decoration:none; padding:5px 10px;display: none;}
+
+         .menu li{
+             position: relative;
+             float: left;
+             border-right: 1px solid #ccc;
+         }
+         .menu li ul{
+             position: absolute;
+             top: 25px;
+             left: 0;
+             display:none;
+         } 
+         .menu li:hover ul, .menu li.over ul{display:block;}
+         .menu li ul li{
+            border:1px solid #c0c0c0;
+            display:block;
+            width:150px;
+            }
+    </style>
+    
+</head>
+<body>
+    <div id = "interface">
+        <header id ="cabecalho"> 
+        <hgroup>
+            </hgroup>
+            <h1>Rest Mat Cal
+                <img src="https://www.usjt.br/app/themes/mobister/dist/images/logo-sao-judas-new.svg" alt="logo_USJT" width="200" height="80" style ="vertical-align:middle; margin: 0px  0px">
+            </h1>
+        </hgroup>
+            <p2>
+            <label for="Comprimento">Comprimento:</label>
+            <input type="text" id ="Comprimento"> m
+            </p2>
+        <nav>
+            <ul class = "menu" style="list-style: none;">
+            <li><button click="Apoio()">Adicionar Apoio</button></br>
+            <ul>
+                <li><button click="Pino()">Pino</button></li>
+                <li><button click="Rolete">Rolete</Button></li>
+                <li><button click="Engaste">Engaste</Button></li>
+             </ul>
+            </li>
+            <li><button onclick="Carga()">Carga</button>
+                <ul>
+                    <li><button click="Força Pontual">Força Pontual</button></li>
+                    <li><button click="Momento">Momento</Button></li>
+                    <li><button click="Força distribuida">Força Distribuida</Button></li>
+                 </ul>
+            </li>
+        </ul>
+        </nav>
+        </div>
+        </menu>
+    </header>
+    </div>  
+    <script>
+
+    </script>
+</body>
+
+</html>
